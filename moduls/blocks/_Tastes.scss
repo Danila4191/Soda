@@ -1,0 +1,60 @@
+.Tastes {
+  display: flex;
+  margin: 0 50px;
+  padding: 90px 100px;
+  background-color: #9960f6;
+
+  @include tablet {
+    padding: 60px;
+    display: block;
+  }
+
+  @include mobile {
+    margin: 0 20px;
+    padding: 20px;
+  }
+
+  &__title {
+    margin: 0;
+    max-width: 457px;
+    @include inter(600, 52px, 48px);
+
+    @include mobile {
+      @include inter(500, 20px, 24px);
+    }
+
+    color: $mainInterColor;
+  }
+
+  &__paragraph {
+    margin: 0;
+    padding-top: 30px;
+    max-width: 386px;
+    @include inter(500, 18px, 31px);
+
+    @include mobile {
+      padding-top: 14px;
+      @include inter(500, 14px, 19px);
+    }
+
+    color: $mainInterColor;
+    opacity: 0.8;
+  }
+
+  &__img {
+    margin-right: 0;
+    margin-left: auto;
+    width: 100%;
+    max-width: 518px;
+
+    @include tablet {
+      margin: 0 auto;
+      padding-top: 60px;
+      max-width: 100%;
+    }
+
+    @include mobile {
+      padding-top: 50px;
+    }
+  }
+}
