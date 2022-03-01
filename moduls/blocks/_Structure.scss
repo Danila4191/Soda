@@ -1,0 +1,157 @@
+.Structure {
+  position: relative;
+  display: flex;
+  margin: 0 50px;
+  padding: 90px 100px;
+  background-color: #8556f8;
+
+  @include tablet {
+    padding: 60px;
+    display: block;
+
+  }
+
+  @include mobile {
+    margin: 0 20px;
+    padding: 20px;
+  }
+
+  &__title {
+    margin: 0;
+    max-width: 457px;
+    color: $mainInterColor;
+    @include inter(600, 50px, 48px);
+
+    @include mobile {
+      @include inter(500, 20px, 24px);
+    }
+  }
+
+  &__list-item {
+    list-style: none;
+    border-bottom: 1px solid;
+    width: 255px;
+    padding-bottom: 4px;
+    color: $mainInterColor;
+    @include inter(700, 32px, 50px);
+
+    @include mobile {
+      @include inter(700, 22px, 22px);
+      padding-bottom: 20px;
+      width: 240px;
+    }
+
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 60px;
+    border: 0;
+    width: 163px;
+    height: 55px;
+    color: $secondInterColor;
+    background-color: #ffdb00;
+    @include inter(500, 18px, 31px);
+
+    @include mobile {
+      bottom: 20px;
+    }
+
+    &:hover {
+      border: 2px solid #1e3264;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+
+  &__list {
+    display: grid;
+    margin: 0;
+    margin-right: 0;
+    margin-left: auto;
+    padding: 0;
+    gap: 30px;
+
+    @include tablet {
+      margin-right: auto;
+      margin-left: 0;
+    }
+
+    @include mobile {
+      gap: 20px;
+    }
+  }
+
+  &__paragraph {
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 0;
+    max-width: 386px;
+    color: $mainInterColor;
+    opacity: 0.8;
+    @include inter(500, 18px, 31px);
+
+    @include tablet {
+      padding-bottom: 100px;
+    }
+
+
+    @include mobile {
+      padding-top: 14px;
+      padding-bottom: 60px;
+      @include inter(500, 14px, 19px);
+    }
+
+  }
+
+  &__elipse-s {
+    margin-top: 10px;
+    margin-left: 235px;
+    border: 3px solid #1e3264;
+    border-radius: 100%;
+    @include size (135px, 135px);
+    background-color: #ffdb00;
+
+    @include tablet {
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__elipse-m {
+    margin-top: 30px;
+    margin-left: 130px;
+    border: 3px solid #016450;
+    border-radius: 100%;
+    @include size (185px, 185px);
+    background-color: #cef564;
+
+    @include tablet {
+      margin-top: 0px;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__container {
+    display: flex;
+    width: 100%;
+
+    @include tablet {
+      padding-bottom: 155px;
+      flex-direction: row-reverse;
+    }
+
+    @include mobile {
+      padding-bottom: 115px;
+    }
+  }
+}

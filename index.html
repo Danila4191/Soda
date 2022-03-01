@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soda</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div>
+        <h3 class="header__subtitle">SODA</h3>
+        <div class="header__container">
+          <img
+            class="header__img-back"
+            src="./images/header__soda.jpg"
+            alt="Много соды"
+          />
+          <img
+            src="./images/header__soda-stic.svg"
+            alt="Ананас"
+            class="header__img"
+          />
+        </div>
+      </div>
+      <div class="header__circle"></div>
+      <div class="header__title-container">
+        <h2 class="header__title">Вкусные лимонады из фруктов</h2>
+        <button class="header__button">Подробнее</button>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__line"></div>
+      <h1 class="main__title">Как это работает?</h1>
+      <section id="Tastes" class="Tastes">
+        <div>
+          <h2 class="Tastes__title">Вкусы</h2>
+          <p class="Tastes__paragraph">
+            Пейте фрукты, а не газировку со вкусовыми добавками, наши лимонады
+            на 100% натуральны!
+          </p>
+        </div>
+        <img src="./images/tastes.jpg" alt="Вкусная сода" class="Tastes__img" />
+      </section>
+      <section id="Structure" class="Structure">
+        <div>
+          <h2 class="Structure__title">Состав</h2>
+          <p class="Structure__paragraph">
+            Наши натуральные лимонады делаются из натуральных компонентов.
+          </p>
+          <button class="Structure__button">Попробовать</button>
+        </div>
+        <div class="Structure__container">
+          <div>
+            <div class="Structure__elipse-m"></div>
+            <div class="Structure__elipse-s"></div>
+          </div>
+          <ul class="Structure__list">
+            <li class="Structure__list-item">Сок</li>
+            <li class="Structure__list-item">Пюре</li>
+            <li class="Structure__list-item">Вода</li>
+            <li class="Structure__list-item">Пузыри</li>
+            <li class="Structure__list-item">Витамины</li>
+          </ul>
+        </div>
+      </section>
+      <section class="Soda">
+        <h2 class="Soda__title">SODA — натуральные лимонады!</h2>
+        <div class="Soda__container">
+          <img src="./images/Soda-stic.svg" alt="Манго" class="Soda__img" />
+        </div>
+      </section>
+      <section id="Samples" class="Samples">
+        <div>
+          <h2 class="Samples__title">Семплы</h2>
+          <p class="Samples__paragraph">
+            Хотите получить семплы каждого вкуса, чтобы понять что нравится вам?
+            заполните форму!
+          </p>
+        </div>
+        <form id="mailing" name="mailing" class="form">
+          <h3 class="form__title">Семплы</h3>
+          <div class="form__container">
+            <div class="form__input-container">
+              <input
+                class="form__input"
+                name="name"
+                id="name"
+                type="text"
+                placeholder="Name"
+              />
+              <label for="name" class="form__label">Имя *</label>
+            </div>
+            <div class="form__input-container">
+              <input
+                class="form__input"
+                id="surname"
+                type="text"
+                placeholder="Surname"
+              />
+              <label for="surname" class="form__label">Фамилия *</label>
+            </div>
+          </div>
+          <div class="form__input-container">
+            <input
+              class="form__input"
+              id="email"
+              type="email"
+              name="href"
+              placeholder="Email"
+            />
+            <label for="email" class="form__label">Email *</label>
+          </div>
+          <button id="request-mailing" type="submit" class="form__button">
+            Запросить
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__group"></div>
+      <div class="footer__container">
+        <div class="footer__menu">
+          <h2 class="footer__heading">Меню</h2>
+          <nav>
+            <nav class="footer__list">
+              <a class="footer__list-item" href="#Tastes">Вкусы</a>
+              <a class="footer__list-item" href="#Structure">Состав</a>
+              <a class="footer__list-item" href="#Samples">Семплы</a>
+            </nav>
+          </nav>
+        </div>
+        <div class="footer__contacts">
+          <h2 class="footer__heading">Контакты</h2>
+          <ul class="footer__list">
+            <li class="footer__list-item">press@soda.io</li>
+            <li class="footer__list-item">connect@soda.io</li>
+          </ul>
+        </div>
+        <p class="footer__copyright">© 2021 Soda, Inc. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
