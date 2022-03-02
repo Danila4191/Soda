@@ -1,0 +1,98 @@
+.footer {
+  display: flex;
+  margin: 0;
+  padding: 100px 150px;
+  background-color: #7a54f9;
+
+  @include tablet {
+    padding: 120px 50px 150px 50px;
+  }
+
+  @include mobile {
+    display: block;
+    padding: 60px;
+  }
+
+  &__group {
+    position: relative;
+    padding-right: 247px;
+    background-image: url("../images/footer__soda.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include size (300px, 300px);
+
+    @include tablet {
+      @include size (200px, 200px);
+      padding-right: 100px;
+    }
+
+    @include mobile {
+
+      padding-right: 0;
+      margin: 0 auto;
+
+    }
+  }
+
+  &__heading {
+    margin: 0;
+    padding-bottom: 20px;
+    color: $mainInterColor;
+    @include inter(500, 23px, 33px);
+  }
+
+  &__list {
+    display: grid;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include inter(400, 16px, 28px);
+    text-decoration: none;
+    color: $mainInterColor;
+    gap: 3px;
+  }
+
+  &__copyright {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    @include inter(400, 14px, 15px);
+    color: $mainInterColor;
+  }
+
+  &__container {
+    position: relative;
+    display: grid;
+    column-gap: 145px;
+    grid-template-columns: 67px 200px;
+
+    @include tablet {
+      column-gap: 96px;
+      padding-bottom: 158px;
+    }
+
+    @include mobile {
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 80px;
+      text-align: center;
+      column-gap: 0px;
+      row-gap: 50px;
+      margin: 0 auto;
+      grid-template-columns: 1fr;
+
+    }
+  }
+
+  &__list-item {
+    text-decoration: none;
+    color: $mainInterColor;
+
+
+    &:hover {
+      opacity: 0.7;
+      transition: 1s ease-out;
+    }
+  }
+}

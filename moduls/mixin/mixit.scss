@@ -1,0 +1,28 @@
+@mixin inter($W, $S, $H) {
+  font-weight: $W;
+  font-size: $S;
+  line-height: $H;
+}
+
+@mixin size ($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width:$mobile) {
+    @content;
+  }
+}
