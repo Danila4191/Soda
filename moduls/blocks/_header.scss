@@ -1,0 +1,160 @@
+.header {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding: 40px 50px 50px;
+  background-color: #9960f6;
+
+  @include tablet {
+    display: block;
+  }
+
+  @include mobile {
+    padding: 20px;
+  }
+
+  &__title-container {
+    @include tablet {
+      padding-top: 50px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding-bottom: 40px;
+    max-width: 150px;
+    @include inter(700, 30px, 30px);
+
+    @include tablet {
+      padding-bottom: 126px;
+    }
+
+    @include mobile {
+      @include inter(700, 20px, 30px);
+      padding-bottom: 50px;
+    }
+
+    color: #ffdb00;
+  }
+
+  &__img-back {
+    width: 783px;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &__container {
+    position: relative;
+    width: 100%;
+    z-index: 3;
+
+    @include mobile {
+      z-index: 1;
+    }
+  }
+
+  &__title {
+    margin-top: 348px;
+    margin-bottom: 0;
+    margin-left: 100px;
+    max-width: 457px;
+
+    @include inter(600, 40px, 48px);
+
+    @include tablet {
+      @include inter(600, 30px, 38px);
+      max-width: 407px;
+      margin: 0;
+    }
+
+    @include mobile {
+      @include inter(600, 20px, 24px);
+      max-width: 280px;
+      padding-bottom: 30px;
+    }
+
+    color: $mainInterColor;
+  }
+
+  &__button {
+    margin-top: 171px;
+    margin-left: 100px;
+    border: none;
+    @include size (163px, 55px);
+    @include inter(500, 18px, 31px);
+
+    @include tablet {
+      margin: 0;
+    }
+
+    @include mobile {
+      @include inter(500, 16px, 31px);
+      @include size (152px, 51px);
+      margin: 0;
+    }
+
+    color: #1e3264;
+    background-color: #ffdb00;
+
+    &:hover {
+      border: 2px solid #1e3264;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    right: -160px;
+    top: -160px;
+    border-radius: 100%;
+    z-index: 2;
+    @include size (565px, 565px);
+
+    @include tablet {
+      right: 50px;
+      top: 40px;
+      background-size: contain;
+      @include size (128px, 128px);
+    }
+
+    @include mobile {
+      @include size (94px, 94px);
+      right: 20px;
+      top: 20px;
+    }
+
+    background-image: url("../images/header__stic.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(53, 48, 255, 0.2);
+  }
+
+  &__img {
+    position: absolute;
+    right: -52px;
+    bottom: -36px;
+
+
+    @include tablet {
+
+      right: 15px;
+      bottom: 20px;
+    }
+
+    @include mobile {
+      @include size (95px, 95px);
+      right: 5px;
+      bottom: -39px;
+    }
+  }
+
+}
